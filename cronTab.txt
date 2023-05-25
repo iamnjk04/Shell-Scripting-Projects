@@ -1,0 +1,12 @@
+#To define the time you can provide concrete values for
+# minute (m), hour (h), day of month (dom), month (mon),
+# and day of week (dow) or use '*' in these fields (for 'any').
+# 
+ 
+#minute hour  day_of_month month day_of_week   command
+# * * * * * command
+
+# The report below is generated at 8:11 every day of month, evry month and every# day of week
+
+11 8 * * * bash "Location of script"/awsLivePrj.sh >> "Location to genrate a report file"/record_AWS.txt
+
